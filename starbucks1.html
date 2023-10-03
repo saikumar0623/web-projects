@@ -1,0 +1,473 @@
+<html>
+    <head>
+        <title>starbucks</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            .icon{
+                position:absolute;
+                left:80px;
+            }
+            .home{
+                position:absolute;
+                left:200px;
+                top:25px;
+                padding:5px;
+                background-color: white;
+                border:none;
+                font-size: 15px;
+            }
+            .gift{
+                position:absolute;
+                left:290px;
+                top:25px;
+                padding:5px;
+                background-color: white;
+                border:none;
+                font-size: 15px;  
+            }
+            .order{
+                position:absolute;
+                left:380px;
+                top:25px;
+                padding:5px;
+                background-color: white;
+                border:none;
+                font-size: 15px;    
+            }
+            .pay{
+                position:absolute;
+                left:470px;
+                top:25px;
+                padding:5px;
+                background-color: white;
+                border:none;
+                font-size: 15px; 
+            }
+            .store{
+                position:absolute;
+                left:560px;
+                top:25px;
+                padding:5px;
+                background-color: white;
+                border:none;
+                font-size: 15px; 
+            }
+            input{
+                position:absolute;
+                left:900px;
+                padding:10px;
+                width:300px;
+                border-radius:15px;
+                border:none;
+                box-shadow:1px 1px lightgrey;
+            }
+            .search{
+             position:absolute;
+             left:1150px;
+             padding:10px;
+             border-radius: 15px;
+             border:none;
+             background-color:white;   
+            }
+            .user{
+                position:absolute;
+             left:1300px;
+             padding:10px;
+             border-radius:20px;
+             border:1px solid black;
+             background-color:white;   
+            }
+            .world{
+               font-family: SoDoSans_Light, Helvetica, sans-serif;
+               font-size: 20px;
+               line-height:24px;
+                position:absolute;
+                top:60px;   
+                left:1px;
+                background-color: rgb(30,57,50);
+                color:white;
+                padding:30px;
+                width: 1500px;   
+            }
+            .btn{
+                position: absolute;
+                top:95px;
+                left:1200px;
+                border-radius:20px;
+                padding:12px;
+                background-color:black;
+                color:white;
+            }
+            .table{
+                position:absolute;
+                top:200px;
+            }
+            img{
+                border-radius: 80px;
+            }
+            .handcrafted{
+                position:absolute;
+                top:170px;
+                left:90px;
+                color:#1e3932;
+            }
+            
+            .essentials{
+                position: relative;
+                left:150px;
+            }
+            
+            .background{
+                position:absolute;
+                top:450px;
+                left:110px;
+                background-color:rgb(0,98,65);
+                padding:30px;
+                color:white;
+                width:1300px;
+                border-radius: 20px;
+             }
+            .ordernow{
+                position:absolute;
+                top:600px;
+                left:1150px;
+                padding:10px;
+                width:150px;
+                border-radius: 10px;
+                border:none;
+            }
+            .cups{
+                position:absolute;
+                top:490px;
+                left:150px;
+            }
+            .latest{
+                position:absolute;
+                top:730px;
+                left:60px
+            }
+            .arrow1{
+                position:absolute;
+                top:600px;
+                left:1445px;
+                padding:10px;
+                border-radius:20px;
+                border:none;
+                color:#198754;
+            }
+            .table1{
+                position:absolute;
+                top:800px;
+            }
+            .stess{
+                position:absolute;
+                top:500px;
+                left:290px;
+                color:white;
+            }
+            .jug{
+                padding:20px;
+                border:1px solid lightgrey;
+                width:390px;
+                height:200px;
+               box-shadow: 1px 1px 1px 1px lightgrey;
+                position:absolute;
+                top:-7.5px;
+                border-radius: 20px;
+                }
+            
+            .latte{
+                position: absolute;
+                top:1020px;
+                left:55px;
+                
+               }
+               .additem{
+                position:absolute;
+                top:1230px;
+                left:340px;
+                padding:7px;
+                width:100px;
+                border-radius:10px;
+                border:none;
+                background-color:rgb(0,98,65);
+                
+               }
+               .glass{
+                padding:20px;
+                border:1px solid lightgrey;
+                width:390px;
+                height:200px;
+               box-shadow: 1px 1px 1px 1px lightgrey;
+                position:absolute;
+                top:-7.5px;
+                border-radius: 20px;
+               }
+               .frappuccino{
+                position: absolute;
+                top:1020px;
+                left:530px;
+            }
+              
+               .frappuccino1{
+                position: absolute;
+                top:1020px;
+                left:1030px;
+               }
+               .iced{
+                padding:20px;
+                border:1px solid lightgrey;
+                width:390px;
+                height:200px;
+               box-shadow: 1px 1px 1px 1px lightgrey;
+                position:absolute;
+                top:-7.5px;
+                border-radius: 20px;
+               }
+               
+               .barista{
+                position:absolute;
+                top:10px;
+                left:60px;
+                
+               }
+               .bb{
+                border:1px solid lightgrey;
+                height:350px;
+                width:1500px;
+                position:absolute;
+                top:1350px;
+                background-color: rgb(237,235,233);
+               }
+               .bb1{
+                border:1px solid lightgrey;
+                height:150px;
+                width:350px;
+                position:absolute;
+                top:1450px;
+                left:100px;
+                background-color:white;
+               }
+               .bb2{
+                border:1px solid lightgrey;
+                height:150px;
+                width:350px;
+                position:absolute;
+                top:1450px;
+                left:600px;
+                background-color:white;
+               }
+               .bb3{
+                border:1px solid lightgrey;
+                height:150px;
+                width:350px;
+                position:absolute;
+                top:1450px;
+                left:1100px;
+                background-color:white;
+               }
+               .bread{
+                position:absolute;
+                top:1470px;
+                left:120px;
+
+               }
+               .plate{
+                position:absolute;
+                top:1470px;
+                left:620px;
+               }
+               .bite{
+                position:absolute;
+                top:1470px;
+                left:1120px;
+            }
+            .bb4{
+                border:1px solid lightgrey;
+                height:550px;
+                width:1500px;
+                position:absolute;
+                top:1750px;
+                background-color: rgb(237,235,233);   
+            }
+            .hat{
+                position:absolute;
+                top:1800px;
+                left:100px;
+                
+            }
+            .additem3{
+                position:absolute;
+                top:100px;
+                left:240px;
+                padding:7px;
+                width:100px;
+                border-radius:10px;
+                border:none;
+                color:white;
+                background-color:rgb(0,98,65);
+               }
+               
+               .viewmenu{
+                position:absolute;
+                top:1350px;
+                left:1300px;
+               }
+               .coffee{
+                position:absolute;
+                top:1800px;
+                left:120px;
+                color:white;
+               }
+               .learn{
+                position:absolute;
+                top:2150px;
+                left:1220px;
+                width:200px;
+                background-color: white;
+                border-radius: 10px;
+                padding:10px;
+               }
+               .s,.t,.u{
+                position:absolute;
+                left:120px;
+               }
+               .green{
+                border:1px solid lightgrey;
+                width:1500px;
+                height:650px;
+                position:absolute;
+                top:2400px;
+                background-color:rgb(0,98,65);
+               }
+               
+               
+             </style>
+    </head>
+    <body>
+        <img src="starbucks img.png"height="50"width="50" class="icon">
+        <button class="home">Home</button>
+        <button class="gift">Gift</button>
+        <button class="order">Order</button>
+        <button class="pay">Pay</button>
+        <button class="store">Store</button>
+        <input type="text"placeholder="looking for something specific?">
+        <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="user"><i class="fa-solid fa-user"></i></button>
+        <p class="world">A world of rewards awaits you!Sign up now.</p>
+        <button class="btn">Know More</button>
+        
+        <table class="table" cellspacing="20">
+        <tr>
+            <td>
+                <figure>
+                    <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/Bestseller.jpg"height="150"width="150">
+                    <figcaption align="center">Bestseller</figcaption>
+                    
+                </figure>
+                </td>
+            <td><figure>
+                <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/Drinks.jpg"height="150"width="150">
+                <figcaption align="center">Drinks</figcaption>
+                </figure>
+                </td>
+            <td><figure>
+                <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/Food.jpg"height="150"width="150">
+                <figcaption align="center">Food</figcaption>
+                </figure>
+            </td>
+
+            <td><figure><img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/Merchandise.jpg"height="150"width="150">
+                <figcaption align="center">Merchandise</figcaption>
+                </figure></td>
+            <td><figure><img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/CoffeeAtHome.jpg"height="150"width="150">
+                <figcaption align="center">Cofee at Home</figcaption>
+                </figure>
+            </td>
+
+            <td><figure><img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Category/Small/ReadyToEat.jpg"height="150"width="150">
+                <figcaption align="center">Ready to Eat</figcaption>
+                </figure>
+            </td>
+       </tr>
+       </table>
+       <h1 class="handcrafted">Handcrafted curations</h1>
+       
+       <div class="background">
+       <p class="essentials">sip on your favourites with<br><br><br><br>
+        this friendshiday gift timeless and classic starbucks merchandise.now available on myntra too.
+       <br><br><br><br>starting from<br>$800.00</p>
+       </div>
+    <button class="ordernow">order now</button>
+    <img src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/Image_51_18d7946dc4.png"height="200"width="90"class="cups">
+    <h1 class="latest">latest offerings</h1> 
+    <button class="arrow1"><i class="fa-solid fa-arrow-right"></i></button>
+    <h1 class="stess">starbucks essentials</h1>
+
+    <table class="table1"cellspacing="30px">
+        <tr>
+            <td><img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/104014.webp"height="200"width="450"></td>
+            <td><img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/104008.webp"height="200"width="450"></td>
+            <td><img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/104018.webp"height="200"width="450"></td>
+            </tr>
+
+            </table>
+            <div class="latte">
+                <p class="jug"><h2>mocha cookie crumble latte</h2><br><br>fjfhjfdfk fdfrfkdfkjkrf kdsj fkjfkcddk kkfjrk<br>gjhrj tirogdj vdcvdfjghk gkf<br><b<br><br>$450.45</p> 
+                <button class="additem">add item</button>  
+                </div>
+                <button class="additem">add item</button>
+                <div class="frappuccino">
+                    <p class="glass"><h2>mocha cookie frappuccino</h2><br><br>fjfhjfdfk fdfrfkdfkjkrf kdsj fkjfkcddk kkfjrk<br>gjhrj tirogdj vdcvdfjghk gkf<br><b<br><br>$450.45</p>
+                    <button class="additem">add item</button>   
+                    </div>
+                    <div class="frappuccino1">
+                        <p class="iced"><h2> iced mocha cookie crumble</h2><br><br>fjfhjfdfk fdfrfkdfkjkrf kdsj fkjfkcddk kkfjrk<br>gjhrj tirogdj vdcvdfjghk gkf<br><b<br><br>$450.45</p>
+                        <button class="additem">add item</button>   
+                        </div>
+                        
+                        <div class="bb">
+                        <h1 class="barista">barista recommends</h1>
+                        </div>
+                        <div class="bb1">
+                            <button class="additem3">add item</button>
+                            <p class="s">hfffdgfdgreewfhddhdgeuesdrueiq<br>fhhjghsfqosxjbfgfrhhje</p>
+                        </div>
+                    <div class="bb2">
+                        <button class="additem3">add item</button>
+                        <p class="t">vcfddwgsshdhgegthdshgtywegh<br>qwertyjjhffjjsdhdnh</p>
+                        </div>
+                     <div class="bb3">
+                        <button class="additem3">add item</button>
+                        <p class="u">fgdgehdggrhdhshegdsgrgfjdwjer<br>gftrydduehjfufbdjey</p>
+                        </div>
+                    <div class="bread">
+                        <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/112595.webp"height="100"width="100">
+                        </div> 
+                    <div class="plate"> 
+                        <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/112601.webp"height="100"width="100">  
+                        </div>
+                    <div class="bite">
+                            <img src="https://starbucks-cdn-01.s3.ap-south-1.amazonaws.com/Items/Large/webP/113008.webp"height="100"width="100">
+                        </div>
+                    <div class="bb4">
+                        </div>
+                        <div class="hat">
+                            <img src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/Coffeculture_Blog_Web_Banner_2_X_8b72db6546.jpg"height="450"width="1350">
+                        </div>
+                        <p class="viewmenu">view menu</p>
+                        <h1 class="coffee">Coffee-Origin Story:Mystic,Intriguing And Aromatic</h1>
+                        <buttuon class="learn" align="center">Learn more</buttuon>
+                        <div class="green">
+                            </div>
+                            <table cellspacing="50">
+                                <tr>
+                                    <th>about us</th>
+                                    <th>responcibiity</th>
+                                    <th>quick links</th>
+                                    </tr>
+                                    </table>
+
+                           
+    </body>
+</html>
